@@ -36,74 +36,181 @@
             padding-top: 20px;
             border-top: 1px solid #eee;
         }
+        .language-selector {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+        .language-selector select {
+            padding: 5px 10px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        [lang="zh"] {
+            display: none;
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Privacy Policy</h1>
-        
-        <div class="section">
-            <p>This Privacy Policy describes how your personal information is handled when you use our Reminder & Note app.</p>
-        </div>
-
-        <div class="section">
-            <h2>Information Collection and Use</h2>
-            <p>Reminder & Note is designed to respect your privacy. All data created within the app (including reminders, notes, and settings) is stored locally on your device. We do not collect, store, or transmit any personal information to external servers.</p>
-        </div>
-
-        <div class="section">
-            <h2>Data Storage</h2>
-            <p>The following data is stored locally on your device:</p>
-            <ul>
-                <li>Reminders and their settings</li>
-                <li>Notes associated with reminders</li>
-                <li>Custom images used in reminders</li>
-                <li>App preferences and settings</li>
-                <li>Reminder history</li>
-            </ul>
-            <p>This data remains on your device and is only accessible through the app. It can be deleted by removing the app from your device.</p>
-        </div>
-
-        <div class="section">
-            <h2>Device Permissions</h2>
-            <p>Our app requires the following permissions:</p>
-            <ul>
-                <li><strong>Notifications:</strong> To send reminder alerts at your specified times</li>
-                <li><strong>Photo Library Access:</strong> To allow you to customize reminders with your own images</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>In-App Purchases</h2>
-            <p>Our app offers in-app purchases for premium features. Payment processing is handled entirely by Apple's App Store, and we do not collect or store any payment information.</p>
-        </div>
-
-        <div class="section">
-            <h2>Data Deletion</h2>
-            <p>You can delete all your data at any time by:</p>
-            <ul>
-                <li>Using the "Remove All Data" option in the app settings</li>
-                <li>Uninstalling the app from your device</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>Children's Privacy</h2>
-            <p>Our app does not knowingly collect any personal information from children under 13. All data storage is local to the device and under the control of the device owner.</p>
-        </div>
-
-        <div class="section">
-            <h2>Changes to This Policy</h2>
-            <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the app accordingly.</p>
-        </div>
-
-        <div class="contact">
-            <h2>Contact Us</h2>
-            <p>If you have any questions about this Privacy Policy, please contact us at:</p>
-            <p><a href="mailto:liangjisong@foxmail.com">liangjisong@foxmail.com</a></p>
-        </div>
-
-        <p class="last-updated">Last updated: February 2025</p>
+    <div class="language-selector">
+        <select id="languageSelect">
+            <option value="en">English</option>
+            <option value="zh">中文</option>
+        </select>
     </div>
+
+    <div class="container">
+        <!-- English Version -->
+        <div lang="en">
+            <h1>Privacy Policy</h1>
+            
+            <div class="section">
+                <p>This Privacy Policy describes how your personal information is handled when you use our Reminder & Note app.</p>
+            </div>
+
+            <div class="section">
+                <h2>Information Collection and Use</h2>
+                <p>Reminder & Note is designed to respect your privacy. All data created within the app (including reminders, notes, and settings) is stored locally on your device. We do not collect, store, or transmit any personal information to external servers.</p>
+            </div>
+
+            <div class="section">
+                <h2>Data Storage</h2>
+                <p>The following data is stored locally on your device:</p>
+                <ul>
+                    <li>Reminders and their settings</li>
+                    <li>Notes associated with reminders</li>
+                    <li>Custom images used in reminders</li>
+                    <li>App preferences and settings</li>
+                    <li>Reminder history</li>
+                </ul>
+                <p>This data remains on your device and is only accessible through the app. It can be deleted by removing the app from your device.</p>
+            </div>
+
+            <div class="section">
+                <h2>Device Permissions</h2>
+                <p>Our app requires the following permissions:</p>
+                <ul>
+                    <li><strong>Notifications:</strong> To send reminder alerts at your specified times</li>
+                    <li><strong>Photo Library Access:</strong> To allow you to customize reminders with your own images</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>In-App Purchases</h2>
+                <p>Our app offers in-app purchases for premium features. Payment processing is handled entirely by Apple's App Store, and we do not collect or store any payment information.</p>
+            </div>
+
+            <div class="section">
+                <h2>Data Deletion</h2>
+                <p>You can delete all your data at any time by:</p>
+                <ul>
+                    <li>Using the "Remove All Data" option in the app settings</li>
+                    <li>Uninstalling the app from your device</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Children's Privacy</h2>
+                <p>Our app does not knowingly collect any personal information from children under 13. All data storage is local to the device and under the control of the device owner.</p>
+            </div>
+
+            <div class="section">
+                <h2>Changes to This Policy</h2>
+                <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the app accordingly.</p>
+            </div>
+
+            <div class="contact">
+                <h2>Contact Us</h2>
+                <p>If you have any questions about this Privacy Policy, please contact us at:</p>
+                <p><a href="mailto:liangjisong@foxmail.com">liangjisong@foxmail.com</a></p>
+            </div>
+
+            <p class="last-updated">Last updated: February 2025</p>
+        </div>
+
+        <!-- Chinese Version -->
+        <div lang="zh">
+            <h1>隐私政策</h1>
+            
+            <div class="section">
+                <p>本隐私政策描述了在您使用我们的提醒与笔记应用程序时，您的个人信息是如何被处理的。</p>
+            </div>
+
+            <div class="section">
+                <h2>信息收集与使用</h2>
+                <p>提醒与笔记应用程序旨在保护您的隐私。应用程序内创建的所有数据（包括提醒、笔记和设置）都存储在您的设备本地。我们不会收集、存储或传输任何个人信息到外部服务器。</p>
+            </div>
+
+            <div class="section">
+                <h2>数据存储</h2>
+                <p>以下数据存储在您的设备本地：</p>
+                <ul>
+                    <li>提醒事项及其设置</li>
+                    <li>与提醒相关的笔记</li>
+                    <li>提醒中使用的自定义图片</li>
+                    <li>应用程序偏好设置</li>
+                    <li>提醒历史记录</li>
+                </ul>
+                <p>这些数据保留在您的设备上，只能通过应用程序访问。您可以通过删除应用程序来删除这些数据。</p>
+            </div>
+
+            <div class="section">
+                <h2>设备权限</h2>
+                <p>我们的应用程序需要以下权限：</p>
+                <ul>
+                    <li><strong>通知权限：</strong> 用于在您指定的时间发送提醒通知</li>
+                    <li><strong>相册访问权限：</strong> 允许您使用自己的图片来自定义提醒</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>应用内购买</h2>
+                <p>我们的应用程序提供高级功能的应用内购买。支付处理完全由苹果应用商店处理，我们不会收集或存储任何支付信息。</p>
+            </div>
+
+            <div class="section">
+                <h2>数据删除</h2>
+                <p>您可以随时通过以下方式删除所有数据：</p>
+                <ul>
+                    <li>使用应用程序设置中的"删除所有数据"选项</li>
+                    <li>从设备中卸载应用程序</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>儿童隐私</h2>
+                <p>我们的应用程序不会故意收集13岁以下儿童的任何个人信息。所有数据存储都在设备本地，并受设备所有者控制。</p>
+            </div>
+
+            <div class="section">
+                <h2>政策更新</h2>
+                <p>我们可能会不时更新我们的隐私政策。我们会通过在此页面上发布新的隐私政策并相应更新应用程序来通知您任何变更。</p>
+            </div>
+
+            <div class="contact">
+                <h2>联系我们</h2>
+                <p>如果您对本隐私政策有任何问题，请联系我们：</p>
+                <p><a href="mailto:liangjisong@foxmail.com">liangjisong@foxmail.com</a></p>
+            </div>
+
+            <p class="last-updated">最后更新：2025年2月</p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('languageSelect').addEventListener('change', function() {
+            const language = this.value;
+            document.querySelectorAll('[lang]').forEach(element => {
+                if (element.getAttribute('lang') === language) {
+                    element.style.display = 'block';
+                } else {
+                    element.style.display = 'none';
+                }
+            });
+        });
+    </script>
 </body>
 </html>
